@@ -31,20 +31,8 @@
         android:text="Password" />
 
     <Button
-        android:text="Cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="39dp"
-        android:layout_marginEnd="39dp"
-        android:id="@+id/button_Cancel"
-        android:layout_alignBaseline="@+id/button_Login"
-        android:layout_alignBottom="@+id/button_Login"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
         android:text="LOGIN"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="153dp"
         android:id="@+id/button_Login"

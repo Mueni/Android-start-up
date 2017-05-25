@@ -6,6 +6,5 @@
     <string name="username_text">Username</string>
     <string name="password_text">Password</string>
     <string name="button_login_text">Login</string>
-    <string name="button_cancel_text">Cancel</string>
     <string name="Screen_page_text">Welcome to my world</string>
 </resources>

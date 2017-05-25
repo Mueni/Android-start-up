@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_profile"
     android:layout_width="match_parent"
@@ -11,7 +12,9 @@
     tools:context="com.droidclass.login.Profile">
 
     <TextView
-        android:text="WELCOME TO MY WORLD"
+        android:text="WELCOME TO MY WORLD
+        MICHELLE MUENI MUSAU
+        SCCI/00287/2015"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,4 +24,25 @@
         android:layout_marginStart="143dp"
         android:layout_marginTop="62dp"
         android:id="@+id/textView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/star_big_on"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginBottom="87dp"
+        android:id="@+id/imageView" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="64dp" />
+    
 </RelativeLayout>
