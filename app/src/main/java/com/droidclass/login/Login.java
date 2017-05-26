@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
                 String enteredPassword = password.getText().toString();
 
                 if (enteredusername.equals("")){
-                    username.setError("Email is required");
+                    username.setError("username is required");
                 }else if(enteredPassword.equals("")){
                     password.setError("Password is required!");
                 }else{
