@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
@@ -14,19 +15,19 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final TextView username = (TextView) findViewById(R.id.username);
-        final TextView password = (TextView) findViewById(R.id.password);
+        final EditText username = (EditText) findViewById(R.id.username);
+        final EditText password = (EditText) findViewById(R.id.password);
         Button loginButton = (Button) findViewById(R.id.button_Login);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String enteredusername = username.getText().toString();
-                String enteredPassword = password.getText().toString();
+                String inputusername = username.getText().toString();
+                String inputPassword = password.getText().toString();
 
-                if (enteredusername.equals("")){
+                if (inputusername.equals("")){
                     username.setError("username is required");
-                }else if(enteredPassword.equals("")){
+                }else if(inputPassword.equals("")){
                     password.setError("Password is required!");
                 }else{
                     startActivity(new Intent(Login.this, Profile.class));
